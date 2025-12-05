@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=muser
+Comment=Minimalist music player with MPRIS integration
+Exec=/mnt/work/Coding/muser/muser
+Icon=multimedia-audio-player
+Terminal=false
+Categories=AudioVideo;Audio;Player;
+Keywords=music;player;mpris;audio;
+StartupNotify=true

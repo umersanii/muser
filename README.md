@@ -156,6 +156,10 @@ bind = SUPER, M, exec, muser
 ```conf
 bindsym $mod+m exec muser
 ```
+## ui
+Here's a glimpse of muser's minimalist UI, designed for clarity and essential media control. along with [cava](https://github.com/karlstav/cava) and [sptlrx-scaled](https://github.com/users/umersanii/sptlrx-scaled),
+
+![Screenshot of muser UI](ss/image.png)
 
 ## requirements
 
