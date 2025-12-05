@@ -110,6 +110,25 @@ sudo cp muser /usr/local/bin/muser
 sudo ln -s $(pwd)/muser /usr/local/bin/muser
 ```
 
+### 5. install desktop file (for rofi/walker compatibility)
+
+to make muser discoverable by application launchers like rofi, walker, or your desktop environment's app menu:
+
+```bash
+# copy the desktop file to local applications directory
+cp muser.desktop ~/.local/share/applications/
+
+# update desktop database (optional, speeds up detection)
+update-desktop-database ~/.local/share/applications/
+```
+
+**note:** if you installed muser to a custom location in step 4, edit `muser.desktop` first and update the `Exec=` line to point to your installation path.
+
+after installation, muser will appear in:
+- application launchers (rofi, walker, wofi, etc.)
+- desktop environment app menus
+- dmenu-style launchers
+
 ## usage
 
 ### run directly
