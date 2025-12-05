@@ -145,7 +145,7 @@ if __name__ == '__main__':
             background_color='#1e1e2e',
             frameless=False,
             easy_drag=True,
-            min_size=(400, 600)
+            min_size=(300, 200)
         )
         
         # Start the GUI (blocks until window closes)
