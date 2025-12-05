@@ -4,4 +4,9 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Use Python launcher
-python3 "$SCRIPT_DIR/launcher.py"
+# Use Python launcher from venv if available, otherwise fall back to system python
+if [ -f "$SCRIPT_DIR/venv/bin/python3" ]; then
+    "$SCRIPT_DIR/venv/bin/python3" "$SCRIPT_DIR/launcher.py"
+else
+    python3 "$SCRIPT_DIR/launcher.py"
+fi
