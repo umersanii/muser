@@ -1,0 +1,8 @@
+flask
+flask-cors
+pywebview
+PyQt6
+PyQt6-WebEngine
+Pillow
+requests
+psutil
